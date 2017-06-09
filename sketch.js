@@ -247,7 +247,7 @@ if (mouseIsPressed)
 // };
 
 
-function mousePressed()
+function mouseClicked()
 {
   if(button1.clicked())
   {
