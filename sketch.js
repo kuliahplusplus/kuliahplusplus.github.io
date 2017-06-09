@@ -245,3 +245,32 @@ if (mouseIsPressed)
 //   lebar = w;
 //
 // };
+
+
+function mousePressed()
+{
+  if(button1.clicked())
+  {
+
+    click=true;
+    level = "EASY";
+    var body = createTetris(level);
+    tetris = new Tetris (body , lebar/20 );
+  }
+  if(button2.clicked())
+  {
+    console.log("keKlik");
+    click=true;
+    level = "NORMAL";
+    var body = createTetris(level);
+    tetris = new Tetris (body , lebar/20 );
+  }
+  if(button3.clicked())
+  {
+    console.log("keKlik");
+    click=true;
+    level = "HARD";
+    var body = createTetris(level);
+    tetris = new Tetris (body , lebar/20);
+  }
+}
